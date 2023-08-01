@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('preparation') {
             steps {
-                snApplyChanges url: "https://dev135601.service-now.com/", credentialsId: "ServiceNow"//, appScope: "648742b297943110cdf8b3e6f053af0d"
+                snApplyChanges url: "https://cicdjenkinsapppublish.service-now.com", credentialsId: "88dbbe69-0e00-4dd5-838b-2fbd8dfedeb4", appScope: "x_sofse_cicdjenkins"
             }
         }
     }
