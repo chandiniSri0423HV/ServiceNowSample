@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('preparation') {
+            steps {
+                snApplyChanges url: "https://dev135601.service-now.com/", credentialsId: "ServiceNow", appScope: "ed47cebe97543110cdf8b3e6f053af37"
+            }
+        }
+    }
+}
