@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.Hello</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Hello</name>
+        <script><![CDATA[var Hello = Class.create();
+Hello.prototype = {
+    initialize: function() {
+    },
+
+    type: 'Hello'
+};
+var myHello = new Hello();
+
+// Print the value of the 'type' property
+gs.log(myHello.type);]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-01 04:32:25</sys_created_on>
+        <sys_id>579c140f97103110cdf8b3e6f053afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hello</sys_name>
+        <sys_package display_value="Demo" source="ed47cebe97543110cdf8b3e6f053af37">ed47cebe97543110cdf8b3e6f053af37</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo">ed47cebe97543110cdf8b3e6f053af37</sys_scope>
+        <sys_update_name>sys_script_include_579c140f97103110cdf8b3e6f053afd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-01 04:32:25</sys_updated_on>
+    </sys_script_include>
+</record_update>
