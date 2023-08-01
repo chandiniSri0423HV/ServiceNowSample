@@ -19,6 +19,12 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        echo "Build"
+        echo "${APPSYSID}"
+        echo "${BRANCH}"
+        echo "${DEVENV}"
+        echo "${CREDENTIALS}"
+        
         snApplyChanges(appSysId: "${APPSYSID}", branchName: "${BRANCH}", url: "${DEVENV}", credentialsId: "${CREDENTIALS}")
         snPublishApp(credentialsId: "${CREDENTIALS}", url: "${DEVENV}", appSysId: "${APPSYSID}",
           isAppCustomization: true, obtainVersionAutomatically: true, incrementBy: 2)
